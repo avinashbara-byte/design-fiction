@@ -1,51 +1,45 @@
-# SPACEX 2040 — Employee Simulation
+# SpaceX 2040 — Employee Simulation
 
-A browser-based design-fiction prototype built with React and Vite.
+A React + Vite design-fiction prototype about a future workplace that monitors employees. The interface uses a dark glassmorphism visual language and is designed to be deployed to an HTTPS host so camera and microphone permissions can work.
+
+## Included experience
+
+- Welcome screen with a fictionalised 2040 executive portrait labelled X Æ A-Xii. The portrait is an original stylised illustration, not a real photograph or a prediction of a real person's adult appearance.
+- Employee face capture with live camera preview; the captured image is shown on the employee profile.
+- Voice sample recording through the browser microphone.
+- Employee agreement and identity confirmation.
+- Start-of-day PULSE scan, three distinct design tasks, and an end-of-day report.
+- Performance warning and enhanced monitoring agreement.
+- Three additional Month 02 tasks, each with a different design challenge and interface concepts.
+- Month 02 and Month 03 performance reports, phone permission screen, and termination notice.
 
 ## Run locally
 
-1. Install Node.js (LTS): https://nodejs.org/
-2. Extract this ZIP.
-3. Open the extracted folder in VS Code.
-4. Open Terminal > New Terminal.
-5. Run:
+```bash
+npm install
+npm run dev
+```
 
-   ```bash
-   npm install
-   npm run dev
-   ```
+## Build for hosting
 
-6. Open the local URL printed in the terminal (usually http://localhost:5173).
+```bash
+npm install
+npm run build
+```
 
-## Deploy publicly
+Upload the generated `dist` folder to Netlify, Vercel, or another static host. For Netlify's Git-based deployment, use:
 
-### Netlify (easy option)
-1. Create a GitHub repository and upload the contents of this folder.
-2. Sign in at https://www.netlify.com/
-3. Choose **Add new site > Import an existing project**.
-4. Connect your GitHub repository.
-5. Set:
-   - Build command: `npm run build`
-   - Publish directory: `dist`
-6. Deploy. Netlify will give you an HTTPS URL.
+- Build command: `npm run build`
+- Publish directory: `dist`
 
-### Vercel
-1. Import the GitHub repository at https://vercel.com/
-2. Framework preset: Vite
-3. Build command: `npm run build`
-4. Output directory: `dist`
-5. Deploy.
+## Camera and microphone permissions
 
-## Camera and microphone
+Camera and microphone access require a secure context: use an HTTPS deployment (or `localhost` during local development). The browser will ask the visitor for permission. If the camera preview is blank, check browser site permissions and ensure another application is not using the camera.
 
-Camera and microphone access require a secure context: HTTPS when deployed, or localhost during development.
-The browser will ask the participant for permission. The face scan is a visual interaction only; this prototype does not perform biometric recognition or send biometric data to a server.
-Voice is recorded locally in the browser for the duration of the session and is not uploaded.
+## Prototype limitations and privacy
 
-## Prototype notes
-
-- The flow is intentionally linear. Use **Continue** to move forward.
-- The employee task includes three near-identical design variants and a written rationale.
-- The enhanced-monitoring consent screen includes a refusal path that displays the fictional company error state.
-- Progress and simple responses are held in browser memory only. Refreshing restarts the experience.
-- Replace the fictional CEO portrait and company copy with your chosen assets if required.
+- The face image is captured in the browser and held in React state for this session. It is not uploaded to a server or persisted after a page refresh.
+- Face recognition and biometric matching are not implemented.
+- Voice recording is captured locally and is not uploaded or analysed. The sample is not saved after leaving the page.
+- Productivity scores and monitoring data are fictional narrative elements, not real assessments.
+- The executive portrait is an original stylised fictional portrayal associated with the speculative character name X Æ A-Xii; it is not a depiction of the real individual.

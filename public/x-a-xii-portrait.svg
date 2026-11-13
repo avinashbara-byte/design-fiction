@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 620" role="img" aria-label="Stylised fictional adult executive portrait">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#405a75"/><stop offset=".55" stop-color="#1c2d43"/><stop offset="1" stop-color="#101a2b"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#82dce5" stop-opacity=".38"/><stop offset="1" stop-color="#82dce5" stop-opacity="0"/></radialGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e0c5ad"/><stop offset=".55" stop-color="#b98f78"/><stop offset="1" stop-color="#805f57"/></linearGradient>
+    <linearGradient id="jacket" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#526a83"/><stop offset="1" stop-color="#17283d"/></linearGradient>
+  </defs>
+  <rect width="520" height="620" fill="url(#bg)"/>
+  <circle cx="265" cy="260" r="255" fill="url(#halo)"/>
+  <path d="M66 620c18-135 91-194 199-194s181 59 199 194" fill="url(#jacket)"/>
+  <path d="M191 438l69 80 69-80-25-38h-88z" fill="#d7b29b"/>
+  <path d="M164 204c0-96 45-146 104-146 75 0 119 55 111 154l-12 111c-9 80-54 132-105 132-56 0-98-55-106-132z" fill="url(#skin)"/>
+  <path d="M157 232c-17-90 13-176 102-190 78-13 137 37 132 135-24-31-47-53-80-65-44 30-94 41-151 36z" fill="#202936"/>
+  <path d="M159 194c-5-68 31-128 93-143 73-18 126 26 140 91-43-30-87-35-129-25-34 8-66 35-104 77z" fill="#344252"/>
+  <path d="M189 248c19-12 42-13 59-3" fill="none" stroke="#5a403a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M278 245c19-10 41-8 57 5" fill="none" stroke="#5a403a" stroke-width="8" stroke-linecap="round"/>
+  <ellipse cx="220" cy="274" rx="9" ry="7" fill="#202b35"/><ellipse cx="307" cy="274" rx="9" ry="7" fill="#202b35"/>
+  <path d="M260 278l-13 65 23 8" fill="none" stroke="#8b6558" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M224 380c23 15 51 16 75-1" fill="none" stroke="#704d49" stroke-width="7" stroke-linecap="round"/>
+  <path d="M187 300c-7 81 23 145 73 145 57 0 83-66 76-145-13 36-42 51-76 51-34 0-59-14-73-51z" fill="#a87969" opacity=".14"/>
+  <path d="M146 220c-10 22-11 48-6 70M380 220c10 22 11 48 6 70" fill="none" stroke="#d5b49c" stroke-width="12" stroke-linecap="round"/>
+  <path d="M195 457l65 68 65-68 42 163H153z" fill="#24384f"/>
+  <path d="M260 525l-23 95h46z" fill="#8bdde3" opacity=".8"/>
+  <path d="M40 530h440" stroke="#8bdde3" stroke-opacity=".2"/>
+</svg>
